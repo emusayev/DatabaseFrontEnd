@@ -1,0 +1,70 @@
+<br>
+<div class="row mx-auto cont">
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">View All</h5>
+                <p class="card-text">Query will be ran through mysql</p>
+                <a href="#" class="btn btn-primary" onclick="Controller(0)">All Books</a>
+                <a href="#" class="btn btn-primary" onclick="Controller(6)">All Authors</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">See remaining stock of checked out books.</h5>
+                <p class="card-text">Search will be ran through mysql</p>
+                <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-primary" onclick="Controller(1)" type="button">Search</button>
+                </div>
+                <input type="text" class="form-control" id="query1_input" placeholder="Animal Farm" aria-label="" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">View max number of check out renewals by book.</h5>
+                <p class="card-text">Query will be ran through mysql</p>
+                <a href="#" class="btn btn-primary" onclick="Controller(2)">Select Query</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">See which members still have books due (checked out)</h5>
+                <p class="card-text">Query will be ran through mysql</p>
+                <a href="#" class="btn btn-primary" onclick="Controller(3)">Select Query</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">See remaining stock of all checked out books.</h5>
+                <p class="card-text">Query will be ran through mysql</p>
+                <a href="#" class="btn btn-primary" onclick="Controller(4)">Select Query</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Choose available books that are in stock of a particular genre</h5>
+                <p class="card-text">A Variant using keyword ANY</p>                <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-primary" onclick="Controller(5)" type="button">Search</button>
+                </div>
+                <input type="text" class="form-control" id="query5_input" placeholder="Young Adult" aria-label="" aria-describedby="basic-addon1">
+                </div>
+                {{!-- <a href="#" class="btn btn-primary" onclick="Controller(5)">Select Query</a> --}}
+            </div>
+        </div>
+    </div>
+</div>
+<div id="output">
+</div>
